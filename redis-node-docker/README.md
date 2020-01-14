@@ -82,5 +82,5 @@ $ curl localhost
 As the service has been configured and deployed using Swarm Mode, it will take advantage of the load balancing.
 
 ```
-curl host01
+curl localhost
 ```
