@@ -23,9 +23,9 @@ On user-defined networks like `my_net`, containers can not only communicate by I
 To ensure if the containers can communicate with each other, let us run three alpine containers namely A1, A2 and A3 on `my_net` network which we created earlier.
 
 ```
-$ docker run --rm -it -d --name A1 --network my_net alpine ash
-$ docker run --rm -it -d --name A2 --network my_net alpine ash
-$ docker run --rm -it -d --name A3 --network my_net alpine ash
+$ docker run --rm -it -d --name A1 --network my_net alpine /bin/sh
+$ docker run --rm -it -d --name A2 --network my_net alpine /bin/sh
+$ docker run --rm -it -d --name A3 --network my_net alpine /bin/sh
 ```
 Now try to attach to any one of the containers and ping the other two using container name.
 
